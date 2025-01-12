@@ -1,0 +1,11 @@
+Contains information about our project
+There are two types of dependencies, Development dependencies and normal dependencies which are app will need to run when live or deployed
+
+To install a package as a dev dependency, use "npm install <package_name> --save-dev"
+
+Nodemon is used to re-run the file with node whenever we make a change. It can be installed using "npm install nodemon --save-dev" (it is a development dependency)
+
+We can make our custom scripts in package.json file under the scripts property and we can give it any name, like to run a file with nodemon, set a dev script like 
+"scripts": {
+  "dev": "nodemon <file_name>.js"
+}
