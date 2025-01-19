@@ -1,0 +1,32 @@
+Rest API is basically just jules for Defining API URLs
+
+Use Nouns, Not Verbs
+  When defining routes, always use nouns to represent the resource being interacted with, rather than verbs to describe the action.
+    Correct: /users
+    Incorrect: /getAllUsers
+
+Resources in REST Terminology
+Each entity, such as posts, users, or todos, is referred to as a resource.
+
+Action Determined by HTTP Method
+The type of HTTP request (GET, POST, PUT, DELETE) determines the action to be performed on the resource. Here's how to structure the routes:
+
+  To Create a Resource
+    Correct: POST /posts
+    Incorrect: POST /posts/create-post
+
+  To Retrieve a List of Resources
+    Correct: GET /posts
+    Incorrect: GET /getAllPosts
+
+  To Retrieve a Specific Resource
+    Correct: GET /posts/{id}
+    Incorrect: GET /getPostById/{id}
+
+  To Update a Resource
+    Correct: PUT /posts/{id}
+    Incorrect: PUT /updatePost/{id}
+
+  To Delete a Resource
+    Correct: DELETE /posts/{id}
+    Incorrect: DELETE /deletePost/{id}
